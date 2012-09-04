@@ -1,0 +1,9 @@
+# Vist http://dev.twitter.com to register your application
+# and get oauth settings.
+
+consumer_key:    'KEY'
+consumer_secret: 'SECRET'
+
+oauth_token:       'TOKEN'
+oauth_token_secret: 'TOKEN SECRET'
+
