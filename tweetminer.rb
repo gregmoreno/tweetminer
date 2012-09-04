@@ -1,6 +1,10 @@
 require "mongo"
 
+require File.dirname(__FILE__) + "/status_counter"
+
 class TweetMiner
+  include StatusCounter
+
   attr_writer :db_connector
   attr_reader :options
 

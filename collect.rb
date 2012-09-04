@@ -1,9 +1,9 @@
 # Collects user tweets and saves them to a mongodb
 
 require "bundler"
-require File.dirname(__FILE__) + "/tweetminer"
-
 Bundler.require
+
+require File.dirname(__FILE__) + "/tweetminer"
 
 # We use the TweetStream gem to access Twitter's Streaming API.
 # https://github.com/intridea/tweetstream
