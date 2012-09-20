@@ -26,9 +26,11 @@ stream.on_error do |msg|
   puts msg
 end
 
-stream.on_timeline_status do |status|
+#stream.on_timeline_status do |status|
+stream.track("RT") do |status|
   miner.insert_status status
   print "."
+#  ap status
 end
 
 # Do not forget this to trigger the collection of tweets

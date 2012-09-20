@@ -1,9 +1,11 @@
 require "mongo"
 
 require File.dirname(__FILE__) + "/status_counter"
+require File.dirname(__FILE__) + "/user_mention"
 
 class TweetMiner
   include StatusCounter
+  include UserMention
 
   attr_writer :db_connector
   attr_reader :options
@@ -35,3 +37,15 @@ class TweetMiner
   end
 
 end
+
+
+#module Mongo
+#  class Collection
+#    def each
+#      find.each { |i| yield i }
+#    end
+#  end
+#end
+
+
+
