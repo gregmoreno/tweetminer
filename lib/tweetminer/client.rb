@@ -1,9 +1,11 @@
 require "tweetminer/connection"
+require "tweetminer/status"
 
 module TweetMiner
 
   class Client
     include TweetMiner::Connection
+    include TweetMiner::Status
 
     attr_accessor(*Configuration::VALID_CONFIG_KEYS)
 
