@@ -1,0 +1,6 @@
+source "http://rubygems.org"
+
+gem "tweetstream"
+gem "awesome_print", :require => "ap"
+
+gem "tweetminer"#, :path => "~/dev/projects/tweetminer"
